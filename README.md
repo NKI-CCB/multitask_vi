@@ -21,25 +21,29 @@ Next, we'll compute the DVI using calculate\_weighted\_vi.py. This script requir
 python calculate_weighted_vi.py -x example/x.csv -y example/y.csv -o example/output.csv
 ```
 The example data has been designed such that
- * for the first five drug combinations the importance of the first variable will be high; and
- * for the next five drug combinations the importance of the second variable will be high.
+
+* for the first five drug combinations the importance of the first variable will be high; and
+
+* for the next five drug combinations the importance of the second variable will be high.
 
 Besides the mandatory -x, -y and -o parameters, there are a number of optional parameters:
- * --output\_model: where should a pickled version of the Random Forest model be saved?
- * --n\_estimators: number of trees to use in the Random Forest (default: 500).
- * --threads: number of threads to use (default: 1).
- * --seed: random seed to use (default: 1).
+
+* --output\_model: where should a pickled version of the Random Forest model be saved?
+* --n\_estimators: number of trees to use in the Random Forest (default: 500).
+* --threads: number of threads to use (default: 1).
+* --seed: random seed to use (default: 1).
 
 If we'd prefer to train a Random Forest without computing the DVI, we can use
 ```
 python train_rf_regressor.py --x_train example/x.csv --y_train example/y.csv --x\_test example/x.csv --output_pred example/y_hat.csv
 ```
 This script has the following parameters:
- * --x\_train: the input matrix **X** used for training (required).
- * --y\_train: the response vector y used for training (required).
- * --x\_test: the input matrix **X** used for testing.
- * --output\_pred: where should the prediction using x_test be saved?
- * --output\_model: where should a pickled version of the Random Forest model be saved?
- * --n\_estimators: number of trees to use in the Random Forest (default: 500).
- * --threads: number of threads to use (default: 1).
- * --seed: random seed to use (default: 1).
+
+* --x\_train: the input matrix **X** used for training (required).
+* --y\_train: the response vector y used for training (required).
+* --x\_test: the input matrix **X** used for testing.
+* --output\_pred: where should the prediction using x_test be saved?
+* --output\_model: where should a pickled version of the Random Forest model be saved?
+* --n\_estimators: number of trees to use in the Random Forest (default: 500).
+* --threads: number of threads to use (default: 1).
+* --seed: random seed to use (default: 1).
