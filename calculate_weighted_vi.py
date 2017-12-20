@@ -5,8 +5,6 @@
 from os import path
 import sys
 
-sys.path.append(path.join(path.dirname(__file__), '../LIB'))
-
 import argparse
 import itertools
 from collections import defaultdict
@@ -28,7 +26,7 @@ def main(args):
 
     # Load datasets.
     logging.info('Reading input datasets')
-
+	
     x_frames = (pd.read_csv(x, index_col=0) for x in args.x_frames)
     x = pd.concat(x_frames, axis=0)
 

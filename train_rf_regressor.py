@@ -51,10 +51,6 @@ def main():
         logging.info('Reading test dataset')
         x_test = pd.read_csv(args.x_test, index_col=0)
 
-        # Perform some sanity checks.
-        #if not all(x_train.index == x_test.index):
-        #    raise ValueError('x_test index does not match x_train')
-
         if not all(x_train.columns == x_test.columns):
             raise ValueError('x_test columns do not match x_train')
 
