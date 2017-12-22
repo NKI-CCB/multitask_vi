@@ -7,7 +7,7 @@ import setuptools
 DESCR = """Description.""".strip()
 LONG_DESCR = """Long description.""".strip()
 
-INSTALL_REQUIRES = ['pandas>=0.18.1', 'scikit-learn>=0.18']
+INSTALL_REQUIRES = ['pandas>=0.18.1', 'scikit-learn>=0.18', 'tqdm']
 EXTRAS_REQUIRE = {}
 
 setuptools.setup(
