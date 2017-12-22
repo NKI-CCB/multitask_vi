@@ -1,13 +1,9 @@
-name: DVI
+name: multitask_vi
 channels:
-    - r
     - bioconda
+    - conda-forge
+    - defaults
 dependencies:
     - python ==3.5
     - pandas ==0.18.1
-    - numba ==0.28.1
-    - matplotlib ==1.5.1
-    - seaborn ==0.7.1
-    - toolz ==0.8.0
-    - notebook ==4.2.2
     - scikit-learn ==0.18
