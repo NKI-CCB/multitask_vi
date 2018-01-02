@@ -64,5 +64,5 @@ target/
 _pybiomart_cache.sqlite
 .ipynb_checkpoints
 
-example/output.csv
-example/y_hat.csv
+example/trained.model.pkl
+example/vi.csv
