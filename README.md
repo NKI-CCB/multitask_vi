@@ -50,4 +50,12 @@ The example data has been designed such that
 * for the next five tasks the importance of the second variable will be high.
 
 ### Example run using the API ###
-An example using the API is given in example/api_example.ipynb.
+An example using the API is given in example/api\_example.ipynb. To run this example, first install the dependencies as described above and then run these additional commands.
+```
+source activate multitask_vi
+conda install jupyter
+conda install matplotlib
+conda install seaborn
+jupyter notebook
+```
+From the Jupyter Notebook, example/api\_example.ipynb can be opened and executed.
