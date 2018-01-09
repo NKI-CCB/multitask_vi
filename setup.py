@@ -5,7 +5,7 @@ import sys
 import setuptools
 
 DESCR = """Multitask Random Forest Variable Importance.""".strip()
-LONG_DESCR = """The Multitask Variable Importance (Multitask VI) is a modified version of the permuted variable importance score for Random Forests. Essentially, for a Random Forest trained simultaneously for multiple response vectors, it allows the inference of variable importance scores per variable and per task. For more information, see our manuscript (Aben et al, submitted, TODO: DOI), where we applied this score to a dataset where each tasks corresponds to a drug combination (and hence the Multitask VI is called the Drug combination specific Variable Importance, or DVI, there).""".strip()
+LONG_DESCR = """The Multitask Variable Importance (Multitask VI) is a modified version of the permuted variable importance score for Random Forests. Essentially, for a Random Forest trained simultaneously for multiple response vectors, it allows the inference of variable importance scores per variable and per task. For more information, see our manuscript (Aben et al, submitted, https://doi.org/10.1101/243568), where we applied this score to a dataset where each tasks corresponds to a drug combination (and hence the Multitask VI is called the Drug combination specific Variable Importance, or DVI, there).""".strip()
 
 INSTALL_REQUIRES = ['pandas>=0.18.1', 'scikit-learn>=0.18', 'tqdm']
 EXTRAS_REQUIRE = {}
